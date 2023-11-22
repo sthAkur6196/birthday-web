@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: "Dancing script";
 }
 html,body{
     height: 100%;
@@ -136,7 +138,7 @@ canvas{
     padding: 0px 30px;
 }
 #nav>h3{
-    font-family: gilroy;
+    font-family: Dancing-script;
     font-weight: 400;
     font-size: 22px;
 }
@@ -170,6 +172,7 @@ canvas{
 #page1>#right-text>h3{
     font-weight: 400;
     color: #7c7c7c;
+    font-size: 24px;
 }
 #page1>#right-text>h1{
     line-height: 1;
@@ -289,34 +292,37 @@ canvas{
 #page2>#text2>p{
     color: #7c7c7c;
     font-weight: 400;
+    font-size: 24px;
+    text-align: right;
 }
-#page3>#text3{
+#page3>#text4{
     position: absolute;
     top: 40%;
     right: 10%;
     text-align: end;
 }
-#page3>#text3>h3{
+#page3>#text4>h3{
     color: #7c7c7c;
     font-weight: 400;
+    font-size: 24px;
 }
-#page3>#text3>h1{
+#page3>#text4>h1{
     font-size: 50px;
 
 }
 
-#page3 > #text4{
+#page3 > #text3{
     position: relative;
     top: 10%;
     left: 10%;
 }
 
-#page3 > #text4 > img{
+#page3 > #text3 > img{
     height: 400px;
     width: 250px;
 }
 
-#page3 > #text4 > img.img3{
+#page3 > #text3 > img.img3{
     position: absolute;
     top: -10%;
     left: -5%;
@@ -326,7 +332,7 @@ canvas{
     animation: updown1 5s ease-in-out infinite;
 }
 
-#page3 > #text4 > img.img4{
+#page3 > #text3 > img.img4{
     position: absolute;
     top: 20%;
     left: 10%;
@@ -635,6 +641,7 @@ p {
     line-height: 25px;
     color: #555;
     text-align: justify;
+    font-size: 24px;
   }
   
   /* .slider .wrapper .right{
@@ -649,4 +656,18 @@ p {
   
   .slider .wrapper .right div:nth-child(1) {
     margin-top: -400vh;
+  }
+
+
+  #btn-play{
+    padding: 10px 20px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    background-color: indigo;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 9;
   }

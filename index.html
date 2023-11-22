@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <audio id="music" loop>
+        <source src="music/music.mp3" type="audio/mp3">
+    </audio>
+    <button id="btn-play" onclick="playAudio()">Play Audio</button>
     <div id="nav">
         <h3><b>PIYA </b>BALUNI</h3>
         <button>22 November, 2023</button>
@@ -43,12 +47,12 @@
                 </h3>
             </div>
             <div id="left-text">
-                <video src="videos/video1.mp4" autoplay muted></video>
+                <video src="videos/video1.mp4" autoplay muted loop></video>
             </div>
         </div>
         <div id="page2">
             <div id="text1">
-                <video src="videos/video2.mp4" autoplay muted></video>
+                <video src="videos/video2.mp4" autoplay muted loop></video>
                 <img src="images/img1.jpg" alt="" class="img1">
                 <img src="images/img2.jpg" alt="" class="img2">
             </div>
@@ -60,14 +64,14 @@
         </div>
         <div id="page3">
             <div id="text3">
+                
+                    <img src="images/img3.jpg" alt="" class="img3">
+                <img src="images/img4.jpg" alt="" class="img4">
+            </div>
+            <div id="text4">
                 <h1>BELLA'S <br />BEST-FRIEND</h1>
                 <h3>Her heart resonates with the joyous rhythm of paws, <br />creating a symphony of love and loyalty
                     <br />with her four-legged companions.</h3>
-
-            </div>
-            <div id="text4">
-                <img src="images/img3.jpg" alt="" class="img3">
-                <img src="images/img4.jpg" alt="" class="img4">
             </div>
         </div>
         <div id="page4">
@@ -196,6 +200,22 @@
             slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides - currentSlide) * -100
                 }vh`;
         });
+
+    </script>
+    <script>
+        const playBtn = document.querySelector('#btn-play');
+        const audio = document.querySelector('#music');
+
+        function playAudio(){
+            if(audio.paused){
+                playBtn.innerHTML="Pause Audio";
+                audio.play();
+            }
+            else{
+                playBtn.innerHTML="Play Audio";
+                audio.pause();
+            }
+        }
 
     </script>
 </body>
